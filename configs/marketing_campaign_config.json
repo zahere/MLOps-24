@@ -1,0 +1,20 @@
+{
+    "name": "marketing_campaign",
+    "data_path": "MLOps-24/data/raw/bank/bank.csv",
+    "sep": ";",
+    "target": "y",
+    "header": "infer",
+    "names": ["age", "job", "marital", "education", "default", "balance", "housing", "loan", "contact",
+              "day", "month", "duration", "campaign", "pdays", "previous", "poutcome", "y"],
+    "numeric_features": ["age", "balance", "day", "duration", "campaign", "pdays", "previous"],
+    "categorical_features": ["job", "marital", "education", "default", "housing", "loan", "contact", "month", "poutcome"],
+    "num_rounds": 20,
+    "xgboost_params": {
+        "objective": "multi:softprob",
+        "max_dept":4,
+        "silent":1,
+        "eta":0.3,
+        "gamma": 0,
+        "num_class": 2
+    }
+}
