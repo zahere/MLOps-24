@@ -9,13 +9,13 @@ class DataLoaderPreprocessor:
 
     def load_data(self):
         if self.config['name'] == 'german_credit':
-            data = pd.read_csv(self.config['data_path'], names=self.config['names'], delimiter=self.config['sep'])
+            data = pd.read_csv(**self.config['readcsv_params']) 
             data[self.config['target']].replace([1, 2], [1, 0], inplace=True)
         elif self.config['name'] == 'marketing_campaign':
-            data = pd.read_csv(self.config['data_path'], delimiter=self.config['sep'])
+            data = pd.read_csv(**self.config['readcsv_params'])
             data[self.config['target']].replace(['yes', 'no'], [1, 0], inplace=True)
         else:
-            raise Exception("Sorry, Unknown Configurations")
+            raise Exception("Sorry, Unknown Configurations. Please check the config file in /configs/ folder.")
         
         
         X = data.drop(columns=[self.config['target']])

@@ -1,11 +1,13 @@
 {
     "name": "german_credit",
-    "data_path": "MLOps-24/data/raw/statlog+german+credit+data/german.data",
-    "sep": " ",
+    "readcsv_params" :{
+        "filepath_or_buffer": "data/raw/statlog+german+credit+data/german.data",
+        "names" :  ["existingchecking", "duration", "credithistory", "purpose", "creditamount", "savings", "employmentsince", "installmentrate",
+                    "statussex", "otherdebtors", "residencesince", "property", "age", "otherinstallmentplans", "housing", "existingcredits", "job",
+                    "peopleliable", "telephone", "foreignworker", "classification"],
+        "delimiter": " "
+        },
     "target": "classification",
-    "names": ["existingchecking", "duration", "credithistory", "purpose", "creditamount", "savings", "employmentsince", "installmentrate",
-              "statussex", "otherdebtors", "residencesince", "property", "age", "otherinstallmentplans", "housing", "existingcredits", "job",
-              "peopleliable", "telephone", "foreignworker", "classification"],
     "numeric_features": ["creditamount", "duration", "installmentrate", "residencesince", "age", "existingcredits", "peopleliable"],
     "categorical_features": ["existingchecking", "credithistory", "purpose", "savings", "employmentsince", "statussex", "otherdebtors",
                              "property", "otherinstallmentplans", "housing", "job", "telephone", "foreignworker"],

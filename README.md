@@ -9,8 +9,8 @@
 
 This repository provides a robust framework for conducting feature importance and vulnerability analysis in machine learning models, specifically designed for tabular data. The framework addresses two primary business problems:
 
-1. **Improving the prediction of marketing campaign success for term deposits** using the bank marketing dataset.
-2. **Enhancing the assessment of credit risk** using the German credit risk dataset.
+1. **Improving the prediction of marketing campaign success for term deposits** using [the bank marketing dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
+2. **Enhancing the assessment of credit risk** using [the German credit risk dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
 
 ### Objectives
 
@@ -34,10 +34,12 @@ This repository provides a robust framework for conducting feature importance an
 ### Quantifiable Metrics
 
 1. **Marketing Model**:
-   - Baseline ROC-AUC: 0.89
+   - [Marketing Baseline](https://www.kaggle.com/code/kevalm/xgboost-implementation-on-bank-marketing-dataset)
+   - Baseline ROC-AUC: 0.89 
    - Our improvement: Increase ROC-AUC by 2% (0.91)
 
 2. **Credit Risk Model**:
+   - [Credit Risk Baseline](https://www.kaggle.com/code/hendraherviawan/predicting-german-credit-default)
    - Baseline ROC-AUC: 0.78
    - Our improvement: Increase ROC-AUC by 2% (0.80)
 
@@ -111,7 +113,7 @@ Three specific types of analyses are defined in the `ModelImprover` class:
 
 ### Usage
 
-1. Prepare your datasets and ensure they are formatted correctly.
+1. Prepare your datasets and ensure you add the configuration json to /config folder .
 2. Define your pipelines and train your models.
 3. Configure the `analyses_to_run` list and the `analysis_methods` dictionary.
 4. Execute the analyses using the `ModelImprover` class.

@@ -79,13 +79,13 @@ class ModelImprover:
 
 if __name__ == "__main__":
     
-    config_path = 'MLOps-24/configs/german_credit_config.json'
-    # config_path = 'MLOps-24/configs/marketing_campaign_config.json'
+    # config_path = 'configs/german_credit_config.json'
+    config_path = 'configs/marketing_campaign_config.json'
     
     pipelines_to_run = [
         'baseline',
-        'data_augmentation',
-        'adversarial_training',
+        # 'data_augmentation',
+        # 'adversarial_training',
         # 'augmented_adversarial',  # This pipeline is broken
         # 'smote_augmentation' # This pipeline is broken
     ]
@@ -97,5 +97,5 @@ if __name__ == "__main__":
     model_improver = ModelImprover(config_path)
     trained_pipelines = model_improver.run_pipeline(pipelines_to_run)
     
-    trained_pipelines = ['baseline', trained_pipelines['baseline']] # Analysis only on baseline model
+    # trained_pipelines = ['baseline', trained_pipelines['baseline']] # Analysis only on baseline model
     model_improver.run_analysis(trained_pipelines, analyses_to_run)
