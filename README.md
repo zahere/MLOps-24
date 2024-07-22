@@ -2,6 +2,8 @@
 
 # Feature Importance and Vulnerability Analysis in ML Models
 
+[![Contributor](https://img.shields.io/badge/Contributor-Zaher%20Khateeb-brightgreen)](https://github.com/zahere)
+[![Profession](https://img.shields.io/badge/Profession-AI/ML%20Engineer,%20Data%20Scientist-blue)](https://github.com/topics/ai-ml)
 
 ## Project Overview
 
@@ -22,8 +24,13 @@ This repository provides a robust framework for conducting feature importance an
 
 ## Personnel
 
-**Y-Data - MLOps 24:**
-- Project Lead: Zaher
+**Data Science School Y-Data - MLOps 24 Course**
+
+[![Contributor](https://img.shields.io/badge/Contributor-Zaher%20Khateeb-blueviolet)](https://github.com/zahere)
+
+
+[![Profession](https://img.shields.io/badge/Profession-AI/ML%20Engineer,%20Data%20Scientist-blue)](https://github.com/topics/ai-ml)
+
 
 ## Metrics
 
@@ -36,11 +43,11 @@ This repository provides a robust framework for conducting feature importance an
 
 1. **Marketing Model**:
    - Baseline ROC-AUC: 0.89
-   - Target improvement: Increase ROC-AUC by 2% (0.91)
+   - Our improvement: Increase ROC-AUC by 2% (0.91)
 
 2. **Credit Risk Model**:
    - Baseline ROC-AUC: 0.78
-   - Target improvement: Increase ROC-AUC by 2% (0.80)
+   - Our improvement: Increase ROC-AUC by 2% (0.80)
 
 ## Analyses Execution
 
@@ -87,15 +94,15 @@ Three specific types of analyses are defined in the `ModelImprover` class:
 
 ### Prerequisites
 
-<img alt="Python Version" src="https://img.shields.io/badge/Python-3.7 or higher-blue">
-<img alt="scikit-learn Version" src="https://img.shields.io/badge/scikit--learn-Required-green">
-<img alt="XGBoost Version" src="https://img.shields.io/badge/XGBoost-Required-green">
-<img alt="SHAP Version" src="https://img.shields.io/badge/SHAP-Required-green">
-<img alt="matplotlib Version" src="https://img.shields.io/badge/matplotlib-Required-green">
-<img alt="numpy Version" src="https://img.shields.io/badge/numpy-Required-green">
-<img alt="pandas Version" src="https://img.shields.io/badge/pandas-Required-green">
-<img alt="scipy Version" src="https://img.shields.io/badge/scipy-Required-green">
-<img alt="joblib Version" src="https://img.shields.io/badge/joblib-Required-green">
+[![Python Version](https://img.shields.io/badge/Python-3.7%20or%20higher-blue)](https://www.python.org/downloads/)
+[![scikit-learn Version](https://img.shields.io/badge/scikit--learn-Required-green)](https://scikit-learn.org/stable/install.html)
+[![XGBoost Version](https://img.shields.io/badge/XGBoost-Required-green)](https://xgboost.readthedocs.io/en/latest/build.html)
+[![SHAP Version](https://img.shields.io/badge/SHAP-Required-green)](https://github.com/slundberg/shap#install)
+[![matplotlib Version](https://img.shields.io/badge/matplotlib-Required-green)](https://matplotlib.org/stable/users/installing.html)
+[![numpy Version](https://img.shields.io/badge/numpy-Required-green)](https://numpy.org/install/)
+[![pandas Version](https://img.shields.io/badge/pandas-Required-green)](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
+[![scipy Version](https://img.shields.io/badge/scipy-Required-green)](https://www.scipy.org/install.html)
+[![joblib Version](https://img.shields.io/badge/joblib-Required-green)](https://joblib.readthedocs.io/en/latest/installing.html)
 
 ### Installation
 
@@ -122,3 +129,7 @@ Three specific types of analyses are defined in the `ModelImprover` class:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Acknowledgments
+
+
+- Special thanks to Data Science School Y-Data - MLOps 24 Course.
