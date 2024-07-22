@@ -2,7 +2,7 @@
 
 # Feature Importance and Vulnerability Analysis in ML Models
 
-[![Contributor](https://img.shields.io/badge/Contributor-Zaher%20Khateeb-brightgreen)](https://github.com/zahere)
+[![Contributor](https://img.shields.io/badge/Contributor-Zaher%20Khateeb-blueviolet)](https://github.com/zahere)
 [![Profession](https://img.shields.io/badge/Profession-AI/ML%20Engineer,%20Data%20Scientist-blue)](https://github.com/topics/ai-ml)
 
 ## Project Overview
@@ -22,14 +22,6 @@ This repository provides a robust framework for conducting feature importance an
 - **Marketing Model**: Provides insights and predictions to optimize campaign strategies, targeting the most likely customers for term deposits.
 - **Credit Risk Model**: Offers more accurate risk assessments to inform lending decisions and reduce default rates.
 
-## Personnel
-
-**Data Science School Y-Data - MLOps 24 Course**
-
-[![Contributor](https://img.shields.io/badge/Contributor-Zaher%20Khateeb-blueviolet)](https://github.com/zahere)
-
-
-[![Profession](https://img.shields.io/badge/Profession-AI/ML%20Engineer,%20Data%20Scientist-blue)](https://github.com/topics/ai-ml)
 
 
 ## Metrics
