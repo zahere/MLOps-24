@@ -13,7 +13,7 @@ class Explainability:
         self.all_feature_names = all_feature_names
         self.explainer = shap.TreeExplainer(self.model)
         if self.config['name'] == 'marketing_campaign':
-            self.shap_values = self.explainer.shap_values(self.X_train, check_additivity=False)[1]
+            self.shap_values = self.explainer.shap_values(self.X_train).mean(axis=2)
         else:
             self.shap_values = self.explainer.shap_values(self.X_train)
     
@@ -27,7 +27,6 @@ class Explainability:
         shap.summary_plot(self.shap_values, self.X_train, feature_names=self.all_feature_names)
     
     def select_features_based_on_shap(self, threshold=0.01):
-        # X_train_df = pd.DataFrame(self.X_train, columns=self.all_feature_names)
         shap_summaries = np.abs(self.shap_values).mean(axis=0)
         selected_features = [self.all_feature_names[i] for i in range(len(shap_summaries)) if shap_summaries[i] > threshold]
         return selected_features

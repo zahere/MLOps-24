@@ -3,43 +3,35 @@
 # Feature Importance and Vulnerability Analysis in ML Models
 
 [![Contributor](https://img.shields.io/badge/Contributor-Zaher%20Khateeb-blueviolet)](https://github.com/zahere)
-[![Profession](https://img.shields.io/badge/Profession-AI/ML%20Engineer,%20Data%20Scientist-blue)](https://github.com/topics/ai-ml)
+[![Profession](https://img.shields.io/badge/-AI/ML%20Engineer-1f425f)](https://github.com/topics/ai-ml)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-zahere-blue)](https://www.linkedin.com/in/zahere/)
+
 
 ## Project Overview
 
 This repository provides a robust framework for conducting feature importance and vulnerability analysis in machine learning models, specifically designed for tabular data. The framework addresses two primary business problems:
 
-1. **Improving the prediction of marketing campaign success for term deposits** using [the bank marketing dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
-2. **Enhancing the assessment of credit risk** using [the German credit risk dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
+1. **Improving the prediction of marketing campaign success for term deposits** using the [bank marketing dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
+2. **Enhancing the assessment of credit risk** using the [German credit risk dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
 
 ### Objectives
 
-- Develop an automatic feature analysis and selection pipeline to improve model performance.
-- Measure improvement using predefined ROC-AUC metrics.
+- Implement a robust framework for analyzing and improving machine learning models.
+- Conduct uncertainty, feature importance, and feature performance analyses to identify model weaknesses and vulnerabilities.
+- Enhance the performance of marketing and credit risk models by improving their feature selection and understanding the impact of individual features on model predictions.
 
-### Customer Consumption
-
-- **Marketing Model**: Provides insights and predictions to optimize campaign strategies, targeting the most likely customers for term deposits.
-- **Credit Risk Model**: Offers more accurate risk assessments to inform lending decisions and reduce default rates.
-
-
-
-## Metrics
-
-### Qualitative Objectives
-
-- Enhance the efficiency of marketing campaigns.
-- Improve the accuracy of credit risk assessments.
-
-### Quantifiable Metrics
+### Baselines and Metrics
 
 1. **Marketing Model**:
    - [Marketing Baseline](https://www.kaggle.com/code/kevalm/xgboost-implementation-on-bank-marketing-dataset)
-   - Baseline ROC-AUC: 0.89 
+   - Provides insights and predictions to optimize campaign strategies, targeting the most likely customers for term deposits.
+   - Baseline ROC-AUC: 0.89
    - Our improvement: Increase ROC-AUC by 2% (0.91)
+
 
 2. **Credit Risk Model**:
    - [Credit Risk Baseline](https://www.kaggle.com/code/hendraherviawan/predicting-german-credit-default)
+   - Offers more accurate risk assessments to inform lending decisions and reduce default rates.
    - Baseline ROC-AUC: 0.78
    - Our improvement: Increase ROC-AUC by 2% (0.80)
 
@@ -88,15 +80,15 @@ Three specific types of analyses are defined in the `ModelImprover` class:
 
 ### Prerequisites
 
-[![Python Version](https://img.shields.io/badge/Python-3.7%20or%20higher-blue)](https://www.python.org/downloads/)
-[![scikit-learn Version](https://img.shields.io/badge/scikit--learn-Required-green)](https://scikit-learn.org/stable/install.html)
-[![XGBoost Version](https://img.shields.io/badge/XGBoost-Required-green)](https://xgboost.readthedocs.io/en/latest/build.html)
-[![SHAP Version](https://img.shields.io/badge/SHAP-Required-green)](https://github.com/slundberg/shap#install)
-[![matplotlib Version](https://img.shields.io/badge/matplotlib-Required-green)](https://matplotlib.org/stable/users/installing.html)
-[![numpy Version](https://img.shields.io/badge/numpy-Required-green)](https://numpy.org/install/)
-[![pandas Version](https://img.shields.io/badge/pandas-Required-green)](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
-[![scipy Version](https://img.shields.io/badge/scipy-Required-green)](https://www.scipy.org/install.html)
-[![joblib Version](https://img.shields.io/badge/joblib-Required-green)](https://joblib.readthedocs.io/en/latest/installing.html)
+[![Python Version](https://img.shields.io/badge/Python-3.7%20or%20higher-3776ab)](https://www.python.org/downloads/)
+[![scikit-learn Version](https://img.shields.io/badge/scikit--learn-Required-007ec6)](https://scikit-learn.org/stable/install.html)
+[![XGBoost Version](https://img.shields.io/badge/XGBoost-Required-007ec6)](https://xgboost.readthedocs.io/en/latest/build.html)
+[![SHAP Version](https://img.shields.io/badge/SHAP-Required-007ec6)](https://github.com/slundberg/shap#install)
+[![matplotlib Version](https://img.shields.io/badge/matplotlib-Required-007ec6)](https://matplotlib.org/stable/users/installing.html)
+[![numpy Version](https://img.shields.io/badge/numpy-Required-007ec6)](https://numpy.org/install/)
+[![pandas Version](https://img.shields.io/badge/pandas-Required-007ec6)](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
+[![scipy Version](https://img.shields.io/badge/scipy-Required-007ec6)](https://www.scipy.org/install.html)
+[![joblib Version](https://img.shields.io/badge/joblib-Required-007ec6)](https://joblib.readthedocs.io/en/latest/installing.html)
 
 ### Installation
 
@@ -126,4 +118,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 
-- Special thanks to Data Science School Y-Data - MLOps 24 Course.
+- Special thanks to Dr. Ishai Rosenberg - MLOps 24 Course (Y-Data)
