@@ -96,7 +96,6 @@ if __name__ == "__main__":
     ]
     model_improver = ModelImprover(config_path)
     trained_pipelines = model_improver.run_pipeline(pipelines_to_run)
-    
-    # print(trained_pipelines, type(trained_pipelines))
+
     trained_pipelines = {'baseline': trained_pipelines['baseline']} # Analysis only on baseline model
     model_improver.run_analysis(trained_pipelines, analyses_to_run)
